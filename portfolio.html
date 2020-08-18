@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio</title>
+    <script src="https://use.fontawesome.com/e1c75b6aa4.js"></script>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            position: relative;
+        }
+        #navbar{
+            background-color: #be3144;
+            height: 75px;
+            width:100%;
+            top: 0px;
+            left: 0px;
+        }
+        ul{
+            display: flex;
+            float: right;
+            list-style:none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        li{
+            height: 75px;
+            line-height: 75px;
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        li:hover{
+            background-color: #dda6ad;  
+        }
+        #welcome-section{
+            height: 500px;
+            width: 100%;
+            background-color: #28292b;
+            color: white;
+        }   
+        #welcome-section h1,h2{
+            position: relative;
+            text-align: center;
+            top: 50%;
+            font-size: 40px;
+            transform: translateY(-50%);
+        }
+        #welcome-section h2{
+            font-size: 20px;
+            color: #be3144;
+        }
+        #project-tile{
+            background-color: #45567d;
+        }
+        header{
+            text-align: center;
+            padding: 20px;
+            background-color: #45567d;
+            color: white;
+        }
+        #project{
+            display: block;
+            height: 450px;
+            width: 30%;
+            float: left;
+            margin: auto;   
+        }
+        #profile-link{
+            height: 90px;
+            width: 350px;
+            color: white;
+            background-color: #303841;
+            
+        }
+        .part-1{
+            display: flex;
+            height: 450px;
+            margin: 20px auto;
+            width: 90%;
+        }
+        .part-2{
+            text-align: center;
+            padding: 10px;
+        }
+        #Show-more{
+            height: 60px;
+            width: 350px;
+            color: white;
+            background-color: #28292b;
+            border-radius: 5px;
+            background-color: #303841;
+        }
+        #footer{
+            height: 55  0px;
+            background-color:#303841;
+        }
+        #social{
+            height: 450px;
+            color: white;
+        }
+        #social h1,h3 {
+            display: block;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #icon{
+            padding-top:30px;
+            display: block;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #icon i{
+            padding: 30px;
+            font-size: 25px;
+        }
+        #dis{
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+        }
+        @media screen and (max-width:800px){
+        #navbar{
+            width: 100%;
+        }
+        .part-1{
+            display: flex;
+            flex-flow: column;            
+            height: auto;
+            width: 100%;            
+        }
+        #project{
+            padding: 0px;
+            margin: auto;
+            display: block;
+            width: 72%;
+        }
+        #social{
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+        }
+        #social h1,h3{
+            display: block;
+            position: relative;
+            top: 20%;
+        }
+        #icon i{
+            display: block;
+            padding: 5px;
+            text-align: left;
+            padding-left: 35%;
+        }
+        #footer{
+            height: auto;
+            width: 100%;
+        }
+        #dis{
+            width: 100%;
+            height: auto;
+            line-height: 35px;
+            text-align: justify;
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#project-tile">Work</a></li>
+            <li><a href="#icon">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="welcome-section">
+        <h1>Hey I am Chandu</h1>
+        <h2>a Web developer</h2>
+    </main>
+    
+    <div id="project-tile">
+        <header><h1>These are some of my projects</h1></header>
+     <div class="part-1">
+        <div id="project"><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Pawan_Kalyan_in_Party_Meeting.jpg" width="350px" height="350px" alt="img"><button id="profile-link"><a href="#">Tribute Page</a></button></div>
+        <div id="project"><img src="https://miro.medium.com/max/924/1*8wNWIJh1hPBoGFxLrYlvUQ.png" width="350px" height="350px" alt="img"><button id="profile-link"><a href="#">Random Quote Machine</a></button></div>
+        <div id="project"><img src="https://cdn-media-1.freecodecamp.org/images/Cw7jNVIhWFV4NSNY8-Lv8uX4583Hr5LvzYFq" width="350px" height="350px" alt=""><button id="profile-link"><a href="#">JavaScript Calculator</a></button></div>
+     </div>
+            
+    <div class="part-1">
+        <div id="project"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTie9qllU2ERdtJkVoOyt6PmjbLwyW3BI4BdJBL8N3MitBwy7lm&usqp=CAU" width="350px" height="350px" alt=""><button id="profile-link"><a href="#">Map Data Across The Globe</a></button></div>
+        <div id="project"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Wikipedia-logo-Martial-Arts.png/805px-Wikipedia-logo-Martial-Arts.png" width="350px" height="350px" alt=""><button id="profile-link"><a href="#">Wikipedia Viewer</a></button></div>
+        <div id="project"><img src="https://www.thoughtco.com/thmb/fAeLn0RAaoJmRkhhSzUfmTUyXfc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/tic-tac-toe-at-playground-702614179-593705f55f9b58d58a58e136.jpg" width="350px" height="350px" alt=""><button id="profile-link"><a href="#">Tic Tac Toe Game</a></button></div>
+    </div> 
+    <div class="part-2">
+        <button id="Show-more"><a href="#">Show all</a></button>
+    </div>  
+    </div>
+    <footer id="footer">
+        <div id="social">
+            <h1>Let's work together...</h1>
+            <h3><i>How do you take your coffee?</i></h3>
+            <div id="icon">
+                <i class="fa fa-facebook-official" aria-hidden="true">&nbsp&nbsp Facebook</i>
+                <i class="fa fa-github" aria-hidden="true">&nbsp&nbsp Github</i>
+                <i class="fa fa-twitter-square" aria-hidden="true">&nbsp&nbsp Twitter</i>
+                <i class="fa fa-envelope" aria-hidden="true">&nbsp&nbsp Send Mail</i>
+                <i class="fa fa-mobile" aria-hidden="true">&nbsp&nbsp Call Me</i>
+            </div>
+        </div>
+        <div id="dis">
+            <p>**This is just a fake portfolio. All the projects and contact details given are not real. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp © Created for freeCodeCamp <a href=""><i class="fa fa-free-code-camp" aria-hidden="true"></i></a> </p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
